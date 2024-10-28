@@ -1,0 +1,214 @@
+body{
+    background-image: url("peces-_10_.gif");
+}
+
+body{
+    display: grid;
+    grid-template-rows: 200px 220px 150px 150px 150px 150px 140px 90px;
+    grid-template-columns: 50% 50% 50%;
+    grid-template-areas: 
+    "header header"
+    "sec1 sec2"
+    "sec1 sec3"
+    "sec1 sec4"
+    "sec1 sec5"
+    "sec1 sec6"
+    "pie pie"
+    "pie pie";
+    gap: 4px;
+}
+
+@media(max-width:800px){
+    body{
+    display: grid;
+    grid-template-rows: 200px 80px 80px 80px 80px 80px 80px 90px;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "sec1"
+    "sec2"
+    "sec3"
+    "sec4"
+    "sec5"
+    "sec6"
+    "pie"
+    "pie";
+    gap: 4px;
+    }
+}
+
+header{  
+    background-color: #044e18;
+    grid-area: header;
+   
+    *{
+        box-sizing: border-box;
+      }
+      form.buscador input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid rgb(17, 59, 22);
+        float: left;
+        width: 80%;
+        background: #21592d;
+      }
+      
+      form.buscador button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: #064606;
+        color: rgb(22, 109, 5);
+        font-size: 17px;
+        border: 1px solid rgb(17, 59, 22);
+        border-left: none;
+        cursor: pointer;
+      }
+      
+      form.buscador button:hover {
+        background: #044e18;
+      }
+      
+      form.buscador::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+    form.buscador input:hover{
+        background-color: rgb(101, 138, 101);
+        color: rgb(36, 59, 36);
+        transition: 3s;
+    }
+}
+
+nav{
+    grid-area: nav;
+    width: 98%;
+    height: 7em;
+    flex-direction: left;
+}
+
+.barnav {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    width: 30%;
+    height: 50%;
+    background-image: "fonfon.gif";
+    color: aliceblue;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.menu:hover{
+    background-color: rgb(184, 167, 145);
+    color: rgb(73, 155, 73);
+    transition: 3s;
+}
+
+.boton{
+    text-shadow: 0px 1px rgb(0, 0, 0, 0.2);
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Helvetica Neue';
+    display: inline-block;
+    color: antiquewhite;
+    background: rgb(76, 109, 76);
+    padding: 7px 20px;
+    white-space: nowrap;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 100px;
+    margin: 10px 5px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+#uno{
+    background-image: url("fonfon.gif");
+    grid-area: sec1;
+}
+
+h3{
+    color: white; 
+    text-shadow: 2px 5px 3px #044e18;
+}
+.h3:hover{
+    text-shadow: 2px 5px 3px;
+    color: rgb(145, 233, 145);
+    transition: color 2s;
+}
+
+.uno{
+    width: 43%;
+    height: 57%;
+    background-size: cover;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
+    margin-left: 300px;
+    border-radius: 175px;
+}
+
+#dos{
+    background-image: url("fonfon.gif");
+    grid-area: sec2;
+}
+
+#tres{
+    background-image: url("fofo.gif");
+    grid-area: sec3;
+}
+
+#cuatro{
+    background-image: url("fonfon.gif");
+    grid-area: sec4;
+}
+
+#cinco{
+    background-image: url("fofo.gif");
+    grid-area: sec5;
+}
+
+#seis{
+    background-image: url("fonfon.gif");
+    grid-area: sec6;
+}
+
+footer{
+    background-image: url("fonfon.gif");
+    
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 107%;
+    grid-area: pie;
+}
+#verde{
+    border: none;
+    font-size: 24px;
+  padding: 20px;
+    background-color: transparent;
+    border-color: #20543a;
+    margin:0% ;}
+#verde a {
+        text-decoration: none;
+      }
+      
+#verde i {
+        font-size: 60px;
+      }

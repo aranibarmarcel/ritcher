@@ -1,0 +1,247 @@
+body{
+    background-color: rgb(212, 203, 203);
+}
+
+body{
+    display: grid;
+    grid-template-rows: 200px 160px 160px 160px 240px;
+    grid-template-columns: 50% 50% 50%;
+    grid-template-areas: 
+    "header header"
+    "sec1 sec1"
+    "sec1 sec1"
+    "sec1 sec1"
+    "pie pie";
+    gap: 4px;
+}
+
+@media(max-width:800px){
+    body{
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "sec1"
+    "sec1"
+    "sec1"
+    "sec1"
+    "sec1"
+    "sec1"
+    "pie";
+    gap: 4px;
+    }
+}
+
+header{  
+    background-color: rgb(44, 75, 44);
+    grid-area: header;
+    background-image: url(https://img.freepik.com/foto-gratis/camino-vacio-atmosfera-oscura_23-2150914310.jpg);
+    *{
+        box-sizing: border-box;
+      }
+      form.buscador input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid rgb(17, 59, 22);
+        float: left;
+        width: 80%;
+        background: #21592d;
+      }
+      
+      form.buscador button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: #064606;
+        color: rgb(22, 109, 5);
+        font-size: 17px;
+        border: 1px solid rgb(17, 59, 22);
+        border-left: none;
+        cursor: pointer;
+      }
+      
+      form.buscador button:hover {
+        background: #044e18;
+      }
+      
+      form.buscador::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+    form.buscador input:hover{
+        background-color: rgb(101, 138, 101);
+        color: rgb(36, 59, 36);
+        transition: 3s;
+    }
+}
+
+nav{
+    grid-area: nav;
+    width: 98%;
+    height: 7em;
+    flex-direction: left;
+}
+    
+.barnav {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+    
+.menu {
+    width: 30%;
+    height: 50%;
+    background-color: rgb(54, 87, 54);
+    color: aliceblue;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+    
+.menu:hover{
+    background-color: rgb(184, 167, 145);
+    color: rgb(73, 155, 73);
+    transition: 3s;
+}
+
+#uno{
+    background-color:rgba(255, 255, 255,0);
+    grid-area: sec1;
+    background-image: url(´Reciclaje.avif´);
+    margin-left: 100px;
+    margin-right: 100px;
+    transition: background-color 0.3s ease-in-out, height 0.3s ease-in-out;
+    color: white;
+    
+}
+
+.uno:hover{
+    background-color: rgb(224, 168, 224);
+    color: rgb(73, 155, 73);
+    transition: 3s;
+}
+
+h1{
+    color: white; 
+    text-shadow: 2px 5px 3px #05611e;
+}
+.h1:hover{
+    text-shadow: 2px 5px 3px;
+    color: rgb(145, 233, 145);
+    transition: color 2s;
+}
+
+p{
+    color: white; 
+    font-size: 17px;
+}
+
+img{
+    float: left;
+}
+
+footer{
+    background-color: rgba(32,84,58,255);
+    grid-area: pie;
+    background-image: url(https://img.freepik.com/foto-gratis/camino-vacio-atmosfera-oscura_23-2150914310.jpg);
+    display:flex;
+    justify-content: space-between;
+    background-position: 0%;
+}
+
+#verde{
+    border: none;
+    font-size: 24px;
+    padding: 20px;
+    background-color: transparent;
+    border-color: #20543a;
+    margin:0% ;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#verde:hover {
+    transform: translateY(-20px); /* Eleva la caja 20 píxeles */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Aumenta la sombra */
+}
+
+#verde a {
+    text-decoration: none;
+}
+      
+#verde i {
+    font-size: 60px;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+}
+
+.mapa-contenedor {
+    flex-grow: 1;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3e8e41;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.location-button {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 5px 5px; /* Espaciado */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 70px;
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;    
+    margin-top: 200px;
+    margin-left:-70px;
+    animation: saltar 0.5s infinite alternate; /* Animación de salto */
+    border-radius: 60%; 
+}
+
+@keyframes saltar {
+    0% {
+    transform: translateY(0); /* Posición inicial */
+    }
+    100% {
+    transform: translateY(-20px); /* Eleva la caja 20 píxeles */
+    }
+}
+
+.location-button i {
+    margin-right: 6px; /* Espacio entre el icono y el texto */          
+}
+        
+.location-button:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
+    box-shadow: 0 4px 20px rgb(255, 255, 255); /* Agrega sombra */
+}
+    
+.log{
+    width:50px;
+    height:40px;
+}
+
+.datos{
+    color: white;
+}

@@ -1,0 +1,134 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #151F30;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container .box{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    background: #f00;
+    margin: 20px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .box::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(325deg, #293040, #306C73);
+}
+
+.container .box::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(325deg, #23343c, #dddcea);
+    filter: blur(30px)
+}
+
+.container .box:nth-child(1)::before,
+.container .box:nth-child(1)::after{
+    background: linear-gradient(45deg, #db6609, #0b4f78) ;
+}
+
+.container .box:nth-child(1)::before,
+.container .box:nth-child(1)::after{
+    background: linear-gradient(315deg, #035390, #c7d3dc) ;
+}
+
+.container .box b{
+    position: absolute;
+    inset: 6px;
+    background: rgb(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.container .box img{
+    position: absolute;
+    z-index: 3;
+    opacity: 0.25;
+    scale: 0.8;
+    transition: 0.5s;
+}
+
+.container .box:hover img{
+    opacity: 0.9;
+    scale: 0.6;
+    transform: translate(-70px);
+}
+
+.container .box .hola{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+    transform: scale(0);
+    z-index: 3;
+}
+
+.container .box:hover .hola{
+    transform: scale(1);
+    bottom: 35px;
+}
+
+.container .box .h2{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container .box h2 span{
+    font-size: 0.75em;
+    font-weight: 300;
+}
+
+.boton {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.boton:hover {
+    background-color: #45a049;
+}
+input {
+    width: 60px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.uno{
+    height: 300px;
+    width: 400px;
+}

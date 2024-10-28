@@ -1,0 +1,180 @@
+#boprin{
+ 
+  width: auto;
+  height: auto; /* o height: 100% si deseas que se ajuste al alto del contenido */
+  position: absolute; /* para que se posicione detrás de otros elementos */
+  top: 0;
+  left: 0;
+  z-index: -1; /* para que se muestre detrás de otros elementos */
+  background-size: cover;
+ 
+  
+ 
+  
+  
+}
+  
+.headercabe{
+  width: 1900px;
+  height: 200px;
+    border-left: 5px solid #20543a;
+     font-family: Arial;
+     background-image: url("peces-_10_.gif");
+     
+     background-repeat: no-repeat;
+      /*background-color: #20543a;*/
+      grid-area: hea;}
+      *{
+        box-sizing: border-box;
+      }
+      form.buscador input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid rgb(17, 59, 22);
+        float: left;
+        width: 80%;
+        background: #21592d;
+      }
+      
+      form.buscador button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: #064606;
+        color: rgb(22, 109, 5);
+        font-size: 17px;
+        border: 1px solid rgb(17, 59, 22);
+        border-left: none;
+        cursor: pointer;
+      }
+      
+      form.buscador button:hover {
+        background: #044e18;
+      }
+      
+      form.buscador::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
+      #fafa{
+        background-color: #064606;
+        right: 89%;
+      }
+      
+  
+  .nav{
+    grid-area: nav;
+     width: 98%;
+      height: 3em;
+  }
+  
+  .barnav {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  .menu{
+          width: 50%;
+          height: 100%;
+          background-color: rgb(0, 75, 22);
+          color: aliceblue;
+          text-decoration: none;
+          display: flex;
+          flex-direction: row;
+          justify-content:center;
+          align-items: center;
+          margin: 1em;
+        }    
+        .menu:hover {
+          background-color: rgb(192, 185, 185);
+          color: rgb(0, 75, 22);
+          transition: 2s;
+        }    
+        .container {
+          position: relative;
+          width: 100%;
+        }
+        .image {
+          width: 100%;
+          height: auto;
+        }
+        .overlay {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          /*background-color: rgb(0, 75, 22);*/
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+          transform: scale(0);
+          transition: .3s ease;
+        }
+        .container:hover .overlay {
+          transform: scale(1);
+        }
+        .text {
+          color: rgb(235, 194, 148);
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }  
+        /* Estilos para pantallas grandes */
+@media (min-width: 1200px) {
+  .headercabe {
+    width: 1900px;
+  }
+  .nav {
+    width: 98%;
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .headercabe {
+    width: 1500px;
+  }
+  .nav {
+    width: 90%;
+  }
+  .menu {
+    width: 40%;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (min-width: 480px) and (max-width: 767px) {
+  .headercabe {
+    width: 1000px;
+  }
+  .nav {
+    width: 80%;
+  }
+  .menu {
+    width: 30%;
+  }
+}
+
+/* Estilos para pantallas muy pequeñas */
+@media (max-width: 479px) {
+  .headercabe {
+    width: 100%;
+  }
+  .nav {
+    width: 100%;
+  }
+  .menu {
+    width: 100%;
+  }
+  .barnav {
+    flex-direction: column;
+  }
+}

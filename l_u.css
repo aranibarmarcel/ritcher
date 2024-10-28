@@ -1,0 +1,70 @@
+  /* Estilos generales */
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('fon.gif');
+    background-size: cover;
+    background-position: center;
+  }
+
+  h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9; 
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    background-color: #fff; 
+  }
+  
+  th {
+    background-color: #089700c9; /* Fondo gris claro para los títulos de columna */
+  }
+  th:hover {
+    background-color: #4AE342; /* Color verde claro cuando se pasa el mouse */
+  }
+
+  td {
+    background-color: #ede0ec; /* Fondo gris claro para los títulos de columna */
+  }
+  td:hover {
+    background-color: #dbc8d5bb; /* Color verde claro cuando se pasa el mouse */
+  }
+
+  button[type="button"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button[type="button"]:hover {
+    background-color: #3e8e41;
+  }
+
+  /* Animaciones */
+  button[type="button"] {
+    transition: background-color 0.2s;
+  }
+
+  /* Efectos hover */
+  button[type="button"]:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Media queries para dispositivos móviles */
+  @media (max-width: 600px) {
+    table {
+      font-size: 14px;
+    }
+  }

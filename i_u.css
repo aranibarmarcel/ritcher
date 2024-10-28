@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('fonfon.gif');
+    background-size: cover;
+    color: #2E7D32; /* Verde oscuro */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #1B5E20; /* Un verde más oscuro para el encabezado */
+}
+
+div {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    text-decoration: none;
+    color: #1B5E20; /* Verde oscuro para los enlaces */
+    font-weight: bold;
+}
+
+a:hover {
+    color: #66BB6A; /* Verde claro al pasar el mouse */
+}
+
+button {
+    background-color: #2E7D32; /* Botón verde oscuro */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #66BB6A; /* Verde claro al pasar el mouse */
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #2E7D32; /* Verde oscuro */
+}
+
+input[type="date"], input[type="number"], input[type="text"] {
+    width: 60%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+input[type="date"]:focus, input[type="number"]:focus, input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+input[type="submit"] {
+    background-color: #2E7D32; /* Verde oscuro */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #66BB6A; /* Verde claro al pasar el mouse */
+}
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    div {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%; /* Botones ocupan todo el ancho en pantallas pequeñas */
+    }
+    label {
+        margin-bottom: 5px;
+    }
+
+    input[type="date"], input[type="number"], input[type="text"] {
+        height: 30px;
+        margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+        width: 100%; /* Botones ocupan todo el ancho en pantallas pequeñas */
+    }
+}

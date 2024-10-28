@@ -1,0 +1,35 @@
+footer{
+    background-color: rgba(32,84,58,255);
+    grid-area: pie;
+    display:flex;
+    justify-content: space-between;
+}
+#verde{
+    border: none;
+    font-size: 24px;
+  padding: 20px;
+    background-color: transparent;
+    border-color: #20543a;
+    margin:0% ;}
+#verde a {
+        text-decoration: none;
+      }
+      
+#verde i {
+        font-size: 60px;
+      }
+
+    .center {
+        text-align: center;
+        margin: auto;
+        width: 50%;
+        padding: 20px;}
+
+    .mapa-contenedor {
+        flex-grow: 1;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #3e8e41;
+        border-radius: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }

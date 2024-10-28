@@ -1,0 +1,117 @@
+header{
+    background-color: #20543a;
+    grid-area:header ;
+    border: 0px solid;
+    height: 250px;
+    margin: 0px 0px;
+    border-left: 5px solid #20543a;
+    font-family: Arial;
+     *{
+       box-sizing: border-box;
+     }
+     form.buscador input[type=text] {
+       padding: 10px;
+       font-size: 17px;
+       border: 1px solid rgb(17, 59, 22);
+       float: left;
+       width: 80%;
+       background: #21592d;
+     }
+     form.buscador input:hover{
+        background-color: #ebdaba;
+        color: rgb(53, 152, 152);
+        transition: 2s;
+     }
+     form.buscador button {
+       float: left;
+       width: 20%;
+       padding: 10px;
+       background: #064606;
+       color: rgb(22, 109, 5);
+       font-size: 17px;
+       border: 1px solid rgb(17, 59, 22);
+       border-left: none;
+       cursor: pointer;
+     }
+     
+     form.buscador button:hover {
+       background:#ebdaba;
+       color: rgb(53, 152, 152);
+       transition: 2s;
+     }
+     form.buscador::after {
+       content: "";
+       clear: both;
+       display: table;
+     }
+ }
+.nav{
+    grid-area: nav;
+    width: 98%;
+    height: 3em;
+}
+.barnav {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+.menu {
+    width: 30%;
+    height: 90%;
+    background-color: #20543a;
+    color: aliceblue;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+  }
+.menu:hover {
+    background-color: #ebdaba;
+    color: rgb(53, 152, 152);
+    transition: 2s;
+}
+.boton{
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+    text-align:center;
+    text-decoration: none;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    display:inline-block;
+    color: #FFF;
+    background: #20543a;
+    padding: 7px 20px;
+    white-space: nowrap;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 100px;
+    margin: 10px 5px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.verde{
+    background: #2ECC71;
+    box-shadow: 0px 5px 0px 0px #27AE60;
+}
+#verde{
+    background-color:#20543a;
+    border-color: #20543a;
+    margin:0% ;
+  }
+  body{
+    display: grid;
+    grid-template-rows: 50px 100px 100px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+        "header header"
+        "nav nav"
+    ;
+    gap:4px;
+}

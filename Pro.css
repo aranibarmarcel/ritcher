@@ -1,0 +1,65 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F7F7F7; /* Fondo gris claro */
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 40px auto; /* Margen superior e inferior de 40px y centrado horizontalmente */
+  padding: 20px; /* Espacio adicional entre el contenido y el borde del contenedor */
+  background-color: #fff; /* Fondo blanco */
+  border: 1px solid #ddd; /* Borde gris claro */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Título principal */
+h1 {
+  font-size: 36px; /* Tamaño de fuente grande */
+  color: #34C759; /* Verde claro */
+  margin-bottom: 20px; /* Espacio adicional entre el título y el contenido */
+}
+
+/* Tabla */
+table {
+  border-collapse: collapse; /* Borde de la tabla */
+  width: 100%; /* Ancho del 100% del contenedor */
+}
+
+th, td {
+  border: 1px solid #ddd; /* Borde gris claro */
+  padding: 10px; /* Espacio adicional entre el texto y el borde de la celda */
+  text-align: left; /* Texto alineado a la izquierda */
+}
+
+th {
+  background-color: #34C759; /* Verde claro */
+  color: #fff; /* Texto blanco */
+}
+
+tr:nth-child(even) {
+  background-color: #F7F7F7; /* Gris claro */
+}
+
+/* Botones */
+button, a {
+  background-color: #34C759; /* Verde claro */
+  color: #fff; /* Texto blanco */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espacio adicional entre el texto y el borde del botón */
+  font-size: 18px; /* Tamaño de fuente grande */
+  cursor: pointer; /* Cursor de mano */
+}
+
+button:hover, a:hover {
+  background-color: #2E865F; /* Verde oscuro */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+button:active, a:active {
+  background-color: #2E865F; /* Verde oscuro */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}

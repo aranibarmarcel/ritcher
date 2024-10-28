@@ -1,0 +1,90 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('fon.gif');
+    background-size: cover;
+    background-position: center;
+    transition: background-color 0.5s;
+  }
+  
+  h1 {
+    color: #022314; /* Verde oscuro */
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos del formulario */
+  form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.5s;
+  }
+  
+  form:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #2E865F; /* Verde oscuro */
+  }
+  
+  input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #F7F7F7;
+    transition: background-color 0.5s;
+  }
+  
+  input[type="text"]:focus, input[type="number"]:focus {
+    background-color: #E7E7E7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  input[type="submit"] {
+    background-color: #2E865F; /* Verde oscuro */
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #1E744F; /* Verde oscuro más intenso */
+  }
+  
+  /* Animaciones */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  form {
+    animation: fadeIn 1s;
+  }
+  
+  input[type="text"], input[type="number"] {
+    animation: fadeIn 1s;
+    animation-delay: 0.5s;
+  }
+  
+  input[type="submit"] {
+    animation: fadeIn 1s;
+    animation-delay: 1s;
+  }

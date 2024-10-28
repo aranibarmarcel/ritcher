@@ -1,0 +1,213 @@
+         #ph , #p1  {
+                font: italic small-caps bold 22px/40px Verdana;
+                font-family: cursive;  }
+                h1   {
+                  font-style: italic;  
+                  text-align: center;
+                }
+                
+        #vd, #p2{ font: italic small-caps bold 21px/21px Verdana;
+                  font-family: cursive;  }
+                  h1   {
+                    font-style: italic;  
+                    text-align: center;
+                  }
+
+
+  #historia{
+    border:3px solid;
+    box-shadow: 4px 5px 4px black;
+    margin:50px;
+    background-color: #ebdaba;
+    padding: 50px;
+    transition: all 4s;
+  }
+  #historia:hover{
+    background-color:#d3c3a4;
+    transform: scale(1.1,1.1);
+    box-shadow: 4px 5px 4px #20543a;
+  }
+  #informacion{
+    border:3px solid;
+    box-shadow: 4px 5px 4px black;
+    margin:50px;
+    background-color: #ebdaba;
+    padding: 50px;
+    transition: all 4s;
+  }
+  #informacion:hover{
+
+    background-color:#d3c3a4;
+    transform: scale(1.1,1.1);
+    box-shadow: 4px 5px 4px #20543a;
+    color: #d3c3a4;
+    font-size: 50px;
+  }
+  #mision{
+    border:3px solid;
+    box-shadow: 4px 5px 4px black;
+    margin:50px;
+    background-color: #ebdaba;
+    padding: 50px;
+    transition: all 4s;
+  }
+  #mision:hover{
+
+    background-color:#d3c3a4;
+    transform: scale(1.1,1.1);
+    box-shadow: 4px 5px 4px #20543a;
+  }
+  #vision{
+    border:3px solid;
+    box-shadow: 4px 5px 4px black;
+    margin:50px;
+    background-color: #ebdaba;
+    padding: 50px;
+    transition: all 4s; 
+  }
+  #vision:hover{
+  background-color:#d3c3a4;
+  transform: scale(1.1,1.1);
+  box-shadow: 4px 5px 4px #20543a;
+  color: #d3c3a4;
+  font-size: 50px;}
+  
+  #cabepri{
+    grid-area: hea;
+  }
+   #pri, #seg {
+    background-image: url("fondo3.jpg");
+    background-color: #ebdaba;
+    background-size: cover;
+    background-position: center;
+  }
+#prihistoria{
+    display:grid;
+    grid-template-rows: 200px  auto 500px ;
+    grid-template-columns: 50% 50% ;
+    grid-template-areas: 
+    "hea hea" 
+    "su sd"
+    "pie pie"
+    ;
+gap:4px;
+}
+
+
+
+
+
+
+
+/* Media query para dispositivos móviles (menos de 768px) */
+@media only screen and (max-width: 768px) {
+  #logo {
+    width: 80px;
+    height: 40px;
+  }
+  #vd, #p2{ font: italic small-caps bold 10px/10px Verdana;
+    font-family: cursive;  }
+    h1  { 
+      font-style: italic small-caps bold 10px/10px;  
+      text-align: center;
+    }
+  #prihistoria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px auto 500px;
+    grid-template-areas:
+      "hea"
+      "su"
+      "sd"
+      "pie";
+  }
+  #historia, #informacion, #mision, #vision {
+    grid-area: su;
+  }
+  #cabepri {
+    grid-area: hea;
+  }
+  #pata {
+    grid-area: pie;
+  }
+ 
+  /* Ajustar tamaño de imágenes */
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+  .container {
+    width: 100%;
+    min-height: auto;
+    max-width: 300px;
+  }
+  .overlay {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+  .text {
+    font-size: 16px;
+  }
+}
+
+
+
+/* Media query para tabletas (entre 768px y 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #logo {
+    width: 100px;
+    height: 50px;
+  }
+  #vd, #p2{ font: italic small-caps bold 18px/17px Verdana;
+    font-family: cursive;  }
+    h1   {
+      font-style: italic small-caps bold 18px/18px;  
+      text-align: center;
+    }
+  #prihistoria {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px auto 500px;
+    grid-template-areas:
+      "hea hea"
+      "su sd"
+      "pie pie";
+  }
+  #historia, #informacion, #mision, #vision {
+    grid-area: su;
+  }
+  #cabepri {
+    grid-area: hea;
+  }
+  #pata {
+    grid-area: pie;
+   background-color: rgba(32,84,58,255);
+ 
+  }
+  #pri, #seg {
+    background-image: url("fondo3.jpg");
+    background-color: #ebdaba;
+  }
+
+  
+  
+    /* Ajustar tamaño de imágenes */
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 500px;
+    }
+    .container {
+      width: 100%;
+      max-width: 500px;
+    }
+    .overlay {
+      width: 100%;
+      max-width: 500px;
+    }
+    .text {
+      font-size: 18px;
+    }
+  }

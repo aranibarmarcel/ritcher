@@ -1,0 +1,22 @@
+body {
+    background-image: url('C:\Users\ESTUDIANTE\Downloads\ima3soli.jpg');
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.notificacion {
+    position: fixed; /* Fija la notificación en la pantalla */
+    right: 20px;     /* Espacio desde el lado derecho */
+    top: 20px;       /* Espacio desde la parte superior */
+    background-color: #4CAF50; /* Color de fondo */
+    color: white;    /* Color del texto */
+    padding: 15px;   /* Espacio interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    z-index: 1000;   /* Asegura que esté por encima de otros elementos */
+}
+img{
+    height: 20px;
+    width: 21px;
+    border-radius: 10px;
+}

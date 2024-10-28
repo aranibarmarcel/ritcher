@@ -1,0 +1,85 @@
+footer{
+    background-color: rgba(32,84,58,255);
+    grid-area: pie;
+    display:flex;
+    justify-content: space-evenly;
+    }
+    #verde{
+    border: none;
+    font-size: 24px;
+    padding: 20px;
+    background-color: transparent;
+    border-color: #20543a;
+    margin:0% ;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    #verde:hover {
+    transform: translateY(-20px); /* Eleva la caja 20 píxeles */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Aumenta la sombra */
+    }
+    
+    #verde a {
+    text-decoration: none;
+    }
+    #verde i {
+    font-size: 60px;
+    }
+    
+    .center {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 20px;}
+    
+    .mapa-contenedor {
+    flex-grow: 1;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3e8e41;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .location-button {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 5px 5px; /* Espaciado */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 70px;
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    margin-top: 200px;
+    margin-left:-70px;
+    animation: saltar 0.5s infinite alternate; /* Animación de salto */
+    border-radius: 60%;
+    }
+    @keyframes saltar {
+    0% {
+    transform: translateY(0); /* Posición inicial */
+    }
+    100% {
+    transform: translateY(-20px); /* Eleva la caja 20 píxeles */
+    }
+    }
+    .location-button i {
+    margin-right: 6px; /* Espacio entre el icono y el texto */
+    ;
+    
+    
+    }
+    .location-button:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
+    box-shadow: 0 4px 20px rgb(255, 255, 255); /* Agrega sombra */
+    }
+    .log{
+    width:50px;
+    height:40px;
+    }
